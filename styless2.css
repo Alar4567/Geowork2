@@ -1,0 +1,740 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Arial", monospace;
+    color: black;
+    background: black;
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    Border-radius: 10px;
+}
+p{
+    text-align: justify;
+}
+.top {
+    margin: auto;
+    width:980px;
+    height: 15px;
+    background: black;
+}
+.menu {
+    margin: auto;
+    margin-top:0px;
+    width:1100px;
+    height: 40px;
+    background: black;
+}
+#logo {
+    width:30px;
+    height: 30px;
+    border: 1px none white;
+    margin-left: 10px;
+    float:left;
+}
+#ima1{
+width:160px;
+height: 10px;
+border: 1px solid black;
+float: left;
+margin-left: 20px;
+text-align: left;
+color: white;
+background: black;
+margin-top: -18px;
+}
+
+
+#vertical-menu2 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 560px;
+    float: right;
+}
+#vertical-menu2 ul {
+    display: none;
+    background-color: #5CCCCC;
+    position: absolute;
+    top: 100%;
+}
+#vertical-menu2 li:hover ul { display: block; }
+#vertical-menu2,#vertical-menu2 ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#vertical-menu2 {
+    height: 30px;
+    background-color:#006363;
+    position: right;
+    min-width: 480px;
+}
+#vertical-menu2 li {
+    float: right;
+    position: relative;
+    height: 100%;
+}
+#vertical-menu2 li a {
+    display: block;
+    padding: 6px;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+#vertical-menu2 ul li { float: none; }
+#vertical-menu2 li:hover { background-color: #5CCCCC; }
+#vertical-menu2 ul li:hover { background-color: #A69600; }
+
+#vertical-menu2 { height: 30px; }
+#vertical-menu2 a {
+    margin-right: 0px;
+    padding: 10px;
+    font: 15px 'Arial', monospace;
+    text-decoration: none;
+    color: white;
+    border: 1px none #ffff;
+    background-color: black;
+}
+#vertical-menu2 a:hover, #vertical-menu2 a.active {
+    color: white;
+    border: 1px none #009999;
+    background-color: #006363;
+    margin: 0px;
+}
+
+.header{
+    margin: auto;
+    width:1200px;
+    height: 1130px;
+    border: 1px none black;
+    background: navy;
+    background: linear-gradient(45deg, black, #06266F,#0B5FA5,#3F8FD2);
+    padding: 10px;
+
+}
+
+#header {
+padding: 10px;
+width:650px;
+height: 170px;
+margin-top: 50px;
+border: 5px solid white;
+border-radius: 10px;
+color: white;
+float: left;
+background: linear-gradient(65deg, #006363,#1D7373,#009999);
+opacity: 80%;
+}
+
+#image1{
+width:500px;
+height: 390px;
+margin-top: 50px;
+border: 1px solid white;
+border-radius: 10px;
+color: white;
+float: right;
+}
+#textleft1{
+padding: 10px;
+width:650px;
+height: 260px;
+margin-top: 15px;
+border: 5px solid white;
+border-radius: 10px;
+color: white;
+float: left;
+background: linear-gradient(65deg, #006363,#1D7373,#009999);
+opacity: 80%;
+}
+#image2{
+width:650px;
+height: 265px;
+margin-top: 15px;
+border: 1px solid white;
+border-radius: 10px;
+color: white;
+float: left;}
+
+#textright2{
+padding: 10px;
+width:500px;
+height: 300px;
+margin-top: -40px;
+border: 5px solid white;
+border-radius: 10px;
+color: white;
+float: right;
+background: linear-gradient(65deg, #006363,#1D7373,#009999);
+opacity: 80%;
+}
+#image3{
+width:500px;
+height: 300px;
+margin-top: 15px;
+border: 1px solid white;
+border-radius: 10px;
+color: white;
+float:right;
+}
+#textleft3{
+padding: 10px;
+width:650px;
+height: 285px;
+margin-top: 15px;
+border: 5px solid white;
+border-radius: 10px;
+color: white;
+float: left;
+background: linear-gradient(65deg, #006363,#1D7373,#009999);
+opacity: 80%;
+}
+
+.galary{
+    margin: auto;
+    width:960px;
+    height: 1100px;
+    border: 1px none black;
+    background: black;
+    padding: 40px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    margin:auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: navy;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #63AFD0;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+#slider {
+padding: 10px;
+width:500px;
+height: 100px;
+margin: auto;
+border: 5px solid white;
+border-radius: 10px;
+color: white;
+float: center;
+background: linear-gradient(65deg, #006363,#1D7373,#009999);
+opacity: 80%;
+}
+
+#slidr2 {
+width:500px;
+height: 50px;
+margin: auto;
+border: 1px none black;
+background: none;
+}
+
+.difficaltis {
+    margin: auto;
+    width:1200px;
+    height: 700px;
+    border: 1px none black;
+    background: navy;
+    background: linear-gradient(45deg, black, #06266F,#0B5FA5,#3F8FD2);
+    padding: 10px;
+}
+#img4 {
+padding: 0px;
+width:600px;
+height: 450px;
+border: 1px solid white;
+border-radius: 10px;
+float: left;
+margin-top: 50px;
+margin-left: 10px;
+}
+
+#txt4 {
+padding: 10px;
+width:400px;
+height: 95px;
+border: 5px solid white;
+border-radius: 10px;
+background: navy;
+background: linear-gradient(65deg, #006363,#1D7373,#009999);
+color: white;
+float: right;
+margin-top: 50px;
+margin-right:50px;
+opacity: 80%;
+}
+
+#txt5 {
+padding: 10px;
+width:500px;
+height: 336px;
+border: 5px solid white;
+border-radius: 10px;
+background: navy;
+background: linear-gradient(65deg, #006363,#1D7373,#009999);
+color: white;
+float: right;
+margin-top: 20px;
+margin-right:50px;
+opacity: 80%;
+}
+.condicions{
+    margin: auto;
+    width:1200px;
+    height: 750px;
+    border: 1px none black;
+    background: black;
+    padding: 0px;
+}
+#card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: auto;
+    text-align: left;
+    font-family: arial;
+    margin-top: -10px;
+    background:white;
+     border-radius: 10px;
+    float: left;
+    height: 600px;
+    margin-left:20px;
+    padding: 15px;
+    margin-bottom: 80px;
+}
+
+#price {
+    color: navy;
+    font-size: 30px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    padding: 20px;
+    color: white;
+    background-color: #63AFD0;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+ button:hover {
+    opacity: 0.7;
+}
+
+#card1 {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+width: 300px;
+margin: auto;
+text-align: justify;
+font-family: arial;
+margin-top: -10px;
+background:white;
+border-radius: 10px;
+float: right;
+height: 600px;
+margin-right: 20px;
+padding: 15px;
+}
+#card2 {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+width: 300px;
+margin: auto;
+text-align: center;
+font-family: arial;
+margin-top: -10px;
+background:white;
+border-radius: 10px;
+float: center;
+height: 600px;
+padding: 15px;
+margin-bottom: 80px;
+}
+
+.cond {
+    margin: auto;
+    width:1200px;
+    height: 650px;
+    border: 1px none black;
+    background: navy;
+    background: linear-gradient(70deg, black, #06266F,#0B5FA5,#3F8FD2);
+    padding: 0px;
+    margin-top: 40px;
+}
+
+#questions{
+width: 300px;
+height: 80px;
+border: 5px solid white;
+border-radius: 10px;
+color: white;
+background:linear-gradient(65deg, #006363,#1D7373,#009999);
+float: right;
+margin-top: 30px;
+margin-right:10px;
+opacity: 80%;
+padding: 5px;
+margin-bottom: 30px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color:#2A4580;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #06276F;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color:#63AFD0;
+    padding: 20px;
+    float: left;
+    width: 50%;
+    margin-top: 40px;
+}
+
+#img5 {
+    width: 500px;
+    height: 300px;
+    float: right;
+    margin-top: 100px;
+    margin-right: 10px;
+
+}
+#img6 {
+width: 600px;
+height: 300px;
+float: right;
+margin-top: -540px;
+margin-left: 800px;
+
+}
+
+/* Универсальное правило для всех якорей — максимальная специфичность */
+.container .content .left-column#about::before,
+.container.additional-section .content .right-column#galary::before,
+#discography::before,
+#gallery::before {
+content: "";
+display: block;
+height: 150px; /* Единый отступ для всех секций */
+margin-top: -150px; /* Компенсация */
+visibility: hidden;
+position: relative;
+}
+
+/* Страховка: если псевдоэлемент не сработал, используем padding + margin */
+.container .content .left-column#about,
+.container.additional-section .content .right-column#galary,
+#discography,
+#gallery {
+padding-top: 115px;
+margin-top: -115px;
+}
+
+.container .content .left-column#about::before,
+.container.additional-section .content .right-column#akvarium::before,
+#discography::before,
+#akvarium::before {
+content: "";
+display: block;
+height: 150px; /* Единый отступ для всех секций */
+margin-top: -150px; /* Компенсация */
+visibility: hidden;
+position: relative;
+}
+.container .content .left-column#about,
+.container.additional-section .content .right-column#akvarium,
+#discography,
+#gallery {
+padding-top: 115px;
+margin-top: -115px;
+}
+
+.container .content .left-column#about::before,
+.container.additional-section .content .right-column#polka::before,
+#discography::before,
+#polka::before {
+content: "";
+display: block;
+height: 150px; /* Единый отступ для всех секций */
+margin-top: -150px; /* Компенсация */
+visibility: hidden;
+position: relative;
+}
+.container .content .left-column#about,
+.container.additional-section .content .right-column#akvarium,
+#discography,
+#polka {
+padding-top: 115px;
+margin-top: -115px;
+}
+
+.container .content .left-column#about::before,
+.container.additional-section .content .right-column#menu::before,
+#discography::before,
+#menu::before {
+content: "";
+display: block;
+height: 150px; /* Единый отступ для всех секций */
+margin-top: -150px; /* Компенсация */
+visibility: hidden;
+position: relative;
+}
+.container .content .left-column#about,
+.container.additional-section .content .right-column#akvarium,
+#discography,
+#menu{
+padding-top: 115px;
+margin-top: -115px;
+}
+
+.container .content .left-column#about::before,
+.container.additional-section .content .right-column#que::before,
+#discography::before,
+#que::before {
+content: "";
+display: block;
+height: 150px; /* Единый отступ для всех секций */
+margin-top: -150px; /* Компенсация */
+visibility: hidden;
+position: relative;
+}
+.container .content .left-column#about,
+.container.additional-section .content .right-column#akvarium,
+#discography,
+#que {
+padding-top: 115px;
+margin-top: -115px;
+}
+
+.footer{
+    margin: auto;
+    width:100%px;
+    height: 200px;
+    border: 1px none black;
+    background: black;
+    padding: 10px;
+}
+
+.site-footer {
+    background-color: black; /* Светло-серый фон подвала */
+    padding: 20px 0;          /* Отступ сверху и снизу */
+}
+
+.footer-container {
+    display: flex; /* Flex-контейнер для горизонтального расположения */
+    align-items: center;/* Выравниваем блоки по вертикали */
+    flex-wrap: wrap;/* Позволяем блокам переноситься при нехватке места */
+    gap: 20px;/* Промежуток между блоками */
+    width: 1200px;/* Ограничиваем максимальную ширину контейнера */
+    margin: 0 auto;/* Центрируем контейнер в пределах подвала */
+    padding: 0 20px; /* Горизонтальные отступы на десктопе */
+    background: black;
+    color: white;
+}
+
+.footer-nav,
+.footer-contacts {
+    margin: 0; /* Убираем лишние вертикальные отступы */
+    color: white;
+}
+
+.footer-nav li,
+.footer-contacts li {
+    list-style: none;    /* Убираем маркеры списка */
+    margin-bottom: 5px;  /* Отступ между пунктами списка */
+}
+
+.footer-nav a,
+.footer-contacts a {
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+    color: white;           /* Цвет текста ссылок */
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column; /* На мобильных блоки идут вертикально */
+        align-items: flex-start;/* Выравниваем по левому краю */
+        text-align: left;       /* Выравниваем текст по левому краю */
+        gap: 10px;              /* Меньший промежуток между блоками */
+        padding: 0 0px;        /* Меньше горизонтальные отступы слева и справа */
+    }
+
+    .footer-nav,
+    .footer-contacts {
+        margin: 10px 0; /* Вертикальные отступы между блоками на мобильных */
+    }
+}
+
+#logo2{
+width:60px;
+height: 60px;
+border: 1px solid black;
+float: right;
+margin-right: 10px;
+margin-left: 1000px;
+margin-top: -140px;
+}
+
+#ima{
+width:160px;
+height: 60px;
+border: 1px solid black;
+float: right;
+margin-right: 50px;
+margin-left: 820px;
+margin-top: -180px;
+text-align: right;
+color: white;
+background: black;
+}
+
+#ver{
+width:200px;
+height: 50px;
+border: 1px solid black;
+border-radius: 10px;
+color: white;
+background:linear-gradient(65deg, #006363,#1D7373,#009999);
+float: left;
+margin-top: 20px;
+margin-left: 5px;
+text-decoration: none;
+padding: 15px;
+padding-top: -50px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#vera{
+    width: 900px;
+    height: 10px;
+    float: left;
+}
+
+#kon{
+margin-top: 100px;
+width:600px;
+height: 50px;
+border: 1px none black;
+position: left;
+margin-right: 0px;
+color: white;
+}
+
+.knopkav{
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+}
